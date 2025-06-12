@@ -1,0 +1,7 @@
+
+Flask
+spotipy
+librosa
+soundfile
+sounddevice
+numpy

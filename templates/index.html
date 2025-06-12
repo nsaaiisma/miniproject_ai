@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MelodyMatch</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MelodyMatch 🎵</h1>
+        <form action="/detect" method="post">
+            <button type="submit">🎤 Cari Lagu Berdasarkan Nada</button>
+        </form>
+
+        {% if note %}
+            <p>Note Terdeteksi: <strong>{{ note }}</strong></p>
+        {% endif %}
+
+        {% if result %}
+            <h2>Hasil Pencarian:</h2>
+            <ul>
+                {% for song in result %}
+                    <li>
+                        <img src="{{ song.album.images[0].url }}" width="64">
+                        {{ song.name }} - {{ song.artists[0].name }} |
+                        <a href="{{ song.external_urls.spotify }}" target="_blank">Play</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+</body>
+</html>

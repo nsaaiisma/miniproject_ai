@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Blinding Lights",
+        "artist": "The Weeknd",
+        "track_id": "0VjIjW4GlUZAMYd2vXMi3b",
+        "dominant_notes": [
+            4,
+            4,
+            5,
+            7,
+            7,
+            5,
+            4
+        ],
+        "dtw_distance": 12.8
+    },
+    {
+        "title": "As It Was",
+        "artist": "Harry Styles",
+        "track_id": "4LRPiXqCikLlN15c3yImP7",
+        "dominant_notes": [
+            5,
+            5,
+            4,
+            3,
+            3,
+            2,
+            1
+        ],
+        "dtw_distance": 18.4
+    },
+    {
+        "title": "Stay",
+        "artist": "The Kid LAROI, Justin Bieber",
+        "track_id": "5PjdY0CKGZdEuoNab3yDmX",
+        "dominant_notes": [
+            2,
+            2,
+            3,
+            5,
+            5,
+            3,
+            2
+        ],
+        "dtw_distance": 14.2
+    }
+]
